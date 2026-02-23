@@ -176,8 +176,8 @@ làm cuộc sống của anh ấm áp và ý nghĩa hơn mỗi ngày 🌹
 
 <p>
 Hy vọng mọi sinh nhật sau này  
-anh vẫn luôn được ở cạnh em, và anh hy vọng lần sau sẽ là anh☺️
-chúc em cười thật nhiều, hạnh phúc thật lâu, gửi những điều tót đẹp nhất đến với em✨
+anh vẫn luôn được ở cạnh em☺️
+chúc em cười thật nhiều, hạnh phúc thật lâu, gửi những điều tốt đẹp nhất đến với em✨
 
 <p><i>Người tạo: Nguyễn Như Vương</i></p>
 
