@@ -161,7 +161,7 @@ Sinh nhật người đặc biệt 💫
 
 <div class="envelope" id="letter">
 
-<h2>🎂 Chúc mừng sinh nhật bé Chan 🎂</h2>
+<h2>🎂 Happy Birthday bé Chan 🎂</h2>
 
 <p>
 Chúc bé <b>Quách Thị Thu Trang</b> (24/02/2026)  
@@ -178,7 +178,6 @@ làm cuộc sống của anh ấm áp và ý nghĩa hơn mỗi ngày 🌹
 Hy vọng mọi sinh nhật sau này  
 anh vẫn luôn được ở cạnh em,  
 chúc em cười thật nhiều, hạnh phúc thật lâu ✨
-</p>
 
 <p><i>Người tạo: Nguyễn Như Vương</i></p>
 
