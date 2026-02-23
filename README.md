@@ -8,8 +8,8 @@
 <style>
 body{
 margin:0;
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
-background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+font-family: system-ui;
+background: linear-gradient(135deg,#ff9a9e,#fad0c4);
 height:100vh;
 display:flex;
 justify-content:center;
@@ -48,7 +48,7 @@ font-size:16px;
 .fadeText{
 margin-top:15px;
 color:#999;
-opacity:0.45;
+opacity:0.4;
 display:none;
 }
 
@@ -63,7 +63,7 @@ padding:25px;
 border-radius:20px;
 box-shadow:0 15px 40px rgba(0,0,0,0.25);
 text-align:center;
-animation:zoom .6s ease;
+animation:zoom 0.7s ease;
 }
 
 @keyframes zoom{
@@ -73,7 +73,6 @@ to{transform:scale(1);opacity:1}
 
 h2{color:#ff4d6d}
 
-/* tim bay */
 .hearts{
 position:absolute;
 font-size:22px;
@@ -100,25 +99,27 @@ to{transform:translateY(-600px);opacity:0}
 <div class="envelope" id="letter">
 <h2>🎂 Chúc mừng sinh nhật bé Chan 🎂</h2>
 
-<p><b>Quách Thị Thu Trang</b><br>
-Sinh ngày 24/02/2004 💖</p>
-
 <p>
-Chúc em tuổi mới luôn vui vẻ, hạnh phúc,  
-xinh đẹp và gặp thật nhiều may mắn trong cuộc sống 🌸
+Chúc <b>Quách Thị Thu Trang</b> sinh ngày 24/02/2004  
+một tuổi mới thật nhiều niềm vui, hạnh phúc và luôn xinh đẹp 💖
 </p>
 
 <p>
-Cảm ơn em vì đã xuất hiện trong cuộc đời anh,  
-làm mọi ngày của anh trở nên ý nghĩa hơn ✨
+Cảm ơn em vì đã đến bên anh,  
+làm cuộc sống của anh trở nên ấm áp và ý nghĩa hơn mỗi ngày 🌹
 </p>
 
 <p>
-Hy vọng những sinh nhật sau này  
-anh vẫn luôn được ở cạnh em 💞
+Hy vọng mọi sinh nhật sau này  
+anh vẫn luôn được ở cạnh em,  
+chúc em cười thật nhiều, hạnh phúc thật lâu ✨
 </p>
 
 <p><i>Người tạo: Nguyễn Như Vương</i></p>
+
+<audio autoplay loop>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
 
 </div>
 
@@ -147,7 +148,7 @@ wrong.style.display="block";
 }
 }
 
-/* Enter để mở */
+/* cho phép bấm Enter */
 document.getElementById("pass").addEventListener("keydown",function(e){
 if(e.key==="Enter") check();
 });
