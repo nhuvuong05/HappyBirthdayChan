@@ -2,15 +2,12 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-
-<!-- QUAN TRỌNG: giúp web tự co theo màn hình -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Chúc mừng sinh nhật bé Chan</title>
 
 <style>
 
-/* reset */
+/* RESET */
 *{
 margin:0;
 padding:0;
@@ -18,33 +15,40 @@ box-sizing:border-box;
 font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
 }
 
+html,body{
+height:100%;
+}
+
+/* NỀN HỒNG + CĂN GIỮA */
 body{
-min-height:100vh;
+min-height:100dvh;
 display:flex;
 justify-content:center;
 align-items:center;
 background:linear-gradient(135deg,#ff9a9e,#fad0c4);
 padding:20px;
+position:relative;
+overflow-x:hidden;
 }
 
-/* ===== FORM ===== */
+/* ===== FORM LOGIN ===== */
 
 .box{
 width:100%;
-max-width:380px;
+max-width:420px;
 background:white;
-padding:30px 22px;
-border-radius:24px;
+padding:32px 24px;
+border-radius:26px;
 text-align:center;
-box-shadow:0 15px 40px rgba(0,0,0,.2);
+box-shadow:0 20px 50px rgba(0,0,0,.25);
+margin:auto;                /* QUAN TRỌNG: giữ giữa */
 }
 
 h3{
 font-size:clamp(18px,4vw,22px);
-margin-bottom:12px;
+margin-bottom:14px;
 }
 
-/* input tự co */
 input{
 width:100%;
 padding:16px;
@@ -54,10 +58,9 @@ border:1px solid #ddd;
 text-align:center;
 }
 
-/* nút tự co */
 button{
 width:100%;
-margin-top:14px;
+margin-top:16px;
 padding:16px;
 border:none;
 border-radius:16px;
@@ -65,49 +68,61 @@ background:#ff4d6d;
 color:white;
 font-size:clamp(16px,4vw,18px);
 font-weight:600;
+cursor:pointer;
 }
 
-/* chữ sai pass */
 .fadeText{
-margin-top:10px;
+margin-top:12px;
 font-size:14px;
-opacity:.5;
+opacity:.6;
 display:none;
 }
 
-/* ===== LÁ THƯ ===== */
+/* ===== THIỆP ===== */
 
 .envelope{
 display:none;
+
+/* CĂN GIỮA CHUẨN MỌI MÀN HÌNH */
 position:fixed;
-left:50%;
-top:50%;
-transform:translate(-50%,-50%);
-width:min(92%,500px);
-max-height:85vh;
+inset:0;
+margin:auto;
+
+width:min(92vw,520px);
+max-height:85dvh;
 overflow:auto;
+
 background:white;
-padding:30px 24px;
-border-radius:26px;
+padding:34px 26px;
+border-radius:28px;
 text-align:center;
-box-shadow:0 25px 60px rgba(0,0,0,.25);
+box-shadow:0 30px 70px rgba(0,0,0,.3);
+
 animation:open .6s ease;
 }
 
+/* animation mở */
 @keyframes open{
-from{opacity:0;transform:translate(-50%,-40%) scale(.8)}
-to{opacity:1;transform:translate(-50%,-50%) scale(1)}
+from{
+opacity:0;
+transform:scale(.85);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
 }
 
 .envelope p{
 font-size:clamp(16px,4vw,18px);
-line-height:1.6;
-margin:10px 0;
+line-height:1.65;
+margin:12px 0;
 }
 
 h2{
 color:#ff4d6d;
 font-size:clamp(22px,5vw,28px);
+margin-bottom:6px;
 }
 
 /* ===== TIM BAY ===== */
@@ -117,11 +132,12 @@ position:fixed;
 bottom:-20px;
 font-size:22px;
 animation:fly 4s linear forwards;
+pointer-events:none;
 }
 
 @keyframes fly{
 to{
-transform:translateY(-110vh);
+transform:translateY(-120vh);
 opacity:0;
 }
 }
@@ -186,11 +202,9 @@ for(let i=0;i<30;i++){
 let h=document.createElement("div");
 
 h.className="hearts";
-
 h.innerHTML="💖";
 
 h.style.left=Math.random()*100+"vw";
-
 h.style.animationDelay=Math.random()*2+"s";
 
 document.body.appendChild(h);
@@ -204,8 +218,6 @@ document.getElementById("wrong").style.display="block";
 }
 
 }
-
-/* Enter mở */
 
 document.getElementById("pass").addEventListener("keydown",e=>{
 if(e.key==="Enter") check();
